@@ -8,9 +8,9 @@
 </head>
 <body>
     <div th:switch="${weather.description}">
-        <img th:case="'clear sky'" src="/static/sunny.jpg" width="612" height="408" alt="Clear Sky">
-        <img th:case="'rain'" src="/static/rainy.jpg" width="612" height="408" alt="Rainy">
-        <img th:case="'light snow'" src="/static/snowy.jpg" width="612" height="286" alt="Snowy">
+        <img th:case="'clear sky'" src="/static/img/sunny.jpg" width="612" height="408" alt="Clear Sky">
+        <img th:case="'rain'" src="/static/img/rainy.jpg" width="612" height="408" alt="Rainy">
+        <img th:case="'light snow'" src="/static/img/snowy.jpg" width="612" height="286" alt="Snowy">
     </div>
     <h2 style="color:teal; text-align: center ">LIVE WEATHER</h2>
     <strong style="font-family: Lobster, monospace; font-size: 45px">The Description</strong> : <p style="display: inline"          th:text="${weather.description}"></p>
