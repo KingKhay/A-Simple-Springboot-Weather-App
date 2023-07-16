@@ -20,12 +20,12 @@ import org.springframework.web.util.UriComponentsBuilder;
 public class WeatherController {
 
     @Value("${api.key}")
-    String apikey;
+    private String apikey;
 
     @Value("${api.host.url}")
-    String hostUrl;
+    private String hostUrl;
 
-    RestTemplate restTemplate;
+    private RestTemplate restTemplate;
 
     @Autowired
     public WeatherController(RestTemplate restTemplate){
